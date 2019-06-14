@@ -1,0 +1,172 @@
+body {
+    font-family: $lato-font-family;
+    background-color: $main-bg-color;
+}
+.preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: 99999;
+    .preloader-gif {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -40px;
+        background: url('/css/bootstrap/preloader.gif') no-repeat;   
+    }
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .7s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0
+}
+.conferenciasapp {   
+    .preloader {
+        position: absolute;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        z-index: 99999;
+        .preloader-gif {
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -40px 0 0 -40px;
+            background: url('/css/bootstrap/preloader.gif') no-repeat;   
+        }
+    }
+    .header {
+        padding-top: 2rem;
+        background-color: $header-bg-color;
+        color: $header-text-color;
+        h1, h2 {
+            font-family: $lato-font-family;
+            margin: 0;
+            text-transform: capitalize;
+        }
+        h1 {
+            font-size: 3rem;
+            color: $header-brand-text-color;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            padding-bottom: 2rem;
+        }
+        span.welcome,
+        span.conftitle {
+            font-family: $lato-font-family;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        span.welcome {
+            font-size: 3rem;
+            line-height: 2.35rem;
+        }
+        span.conftitle {
+            font-size: 2rem;
+            line-height: 1.5rem;
+        }
+    }
+    .main {
+        background-color: $main-bg-color;
+        color: $main-text-color;
+        .thumb {
+            &:hover {
+                text-decoration-color: $main-play-text-color;
+            }
+            .title {
+                color: $main-play-text-color; 
+                font-size: 0.9rem; 
+            }
+            .img {
+                border: 5px solid $footer-bg-color;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: #000000;
+                .fa-play-circle {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate( -45%, -10% );
+                    color: $main-play-icon-color; 
+                }
+                img {
+                    opacity: 1;
+                    transition: opacity .25s ease-in-out;
+                    -moz-transition: opacity .25s ease-in-out;
+                    -webkit-transition: opacity .25s ease-in-out;
+                }
+                img:hover {
+                    opacity: 0.5;
+                    filter: alpha(opacity=50);
+                }
+            }
+        }
+        .conferencia {
+            h2 {
+                font-size: 1.125rem;
+                font-family: $lato-font-family;
+                color: $main-play-text-color;
+            }
+        }
+        .embed-responsive {
+            border: 5px solid $footer-bg-color;
+            border-radius: 5px;
+        }
+        .btn-general {
+            background-color: $main-btn-general-bg-color;
+            border-color: $main-btn-general-bg-color;
+            color: $main-btn-general-text-color;
+            text-transform: uppercase;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem; 
+            &:hover {
+                background-color: $main-btn-general-bg-color-hover;
+                border-color: $main-btn-general-bg-color-hover;
+                text-decoration: underline;
+            }
+        }
+        .modal {
+            font-family: $lato-font-family;
+            h5 {
+                font-size: 1rem;
+            }
+            .modal-content {
+                background-color: $main-bg-color;
+                .modal-header {
+                    border-bottom: unset;
+                    .modal-title {
+                        font-weight: bold;
+                        color: $main-modal-title-color;
+                    }
+                }
+                .modal-body {
+                    padding: 0rem 1rem;
+                }
+                .modal-footer {
+                    border-top: unset;
+                }   
+            }
+             
+        }
+    }
+    .footer {
+        background-color: $footer-bg-color;
+        color: $footer-text-color;
+    }
+}

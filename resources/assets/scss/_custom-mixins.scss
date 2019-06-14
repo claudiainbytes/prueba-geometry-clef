@@ -1,0 +1,29 @@
+//  @media (min-width: 576px) and (max-width: 768px) {}
+@include media-breakpoint-down(sm) {
+    .conferenciasapp {
+        .header {
+            h2 {
+                padding-bottom: 1rem;
+            }
+            span.welcome,
+            span.conftitle {
+                position:relative;
+            }
+            span.welcome {
+                font-size: 3rem;
+            }
+            span.conftitle {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .conferenciasapp {
+     
+    }
+}
+
+
+
+
